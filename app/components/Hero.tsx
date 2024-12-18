@@ -3,6 +3,7 @@ import { useState } from "react"
 import styles from "../styles/Hero.module.css"
 import Image from "next/image";
 export default function Hero() {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const [lightMode, setLightMode] = useState(false);
 
     const toggleDark = () => {

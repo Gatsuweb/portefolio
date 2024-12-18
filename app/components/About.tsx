@@ -36,7 +36,7 @@ export default function About() {
                         </div>
                         <div className={styles.paragraphAbout}>
                         <p>Je m&apos;appelle Ivan DURAN. Je m&apos;intéresse à beaucoup de choses, mais je n&apos;ai jamais eu de passion... jusqu&apos;à novembre 2023, quand j&apos;ai découvert le monde du développement web. Depuis, j&apos;en suis devenu totalement addict.</p>
-                        <p>Créatif depuis toujours, j&apos;aime dessiner et la mode. Je pense que ces centres d&apos;intérêt m&apos;ont naturellement poussé à m&apos;orienter vers le développement créatif. Mais je suis aussi un passionné d'échecs, et j&apos;adore me challenger intellectuellement en travaillant sur des projets complexes.</p>
+                        <p>Créatif depuis toujours, j&apos;aime dessiner et la mode. Je pense que ces centres d&apos;intérêt m&apos;ont naturellement poussé à m&apos;orienter vers le développement créatif. Mais je suis aussi un passionné d&apos;échecs, et j&apos;adore me challenger intellectuellement en travaillant sur des projets complexes.</p>
                         <p>J&apos;ai beaucoup voyagé seul et ai toujours rêvé d&apos;apprendre plusieurs langues pour pouvoir communiquer avec tout le monde. Quel rêve ! Je crois que si je suis devenu développeur web, c&apos;est grâce à ce cocktail unique : créativité, logique et esprit d&apos;aventure, qui me définit si bien.</p>
 
                         </div>
