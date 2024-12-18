@@ -1,0 +1,107 @@
+/* faq.module.css */
+.fContainer {
+  height: 250vh;
+    background-color: #000;
+    color: #fff;
+    font-family: var(--secondaryfont);
+    margin-top: 10%;
+    padding: 0% 2%;
+  }
+  
+  .titleFaq {
+    font-family: var(--secondaryfont);
+    font-size: clamp(6rem, 4.6624rem + 6.1146vw, 12rem);
+    text-align: right;
+    /* margin-bottom: 20px; */
+  }
+  
+   
+
+   .faqContainer {
+    position: relative;
+    z-index: 10;
+    padding: 0 10%;
+   }
+  .faqItem {
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid #fff;
+    padding: 40px 0% 40px 4%;
+    margin-bottom: 5%;
+    margin-top: -5%;
+ 
+    
+  }
+
+  .faqItem:first-child {
+    transform: translateY(0);
+  }
+
+
+  .faqItem:nth-child(2) {
+    transform: translateY(100%);
+ 
+  }
+  .faqItem:nth-child(3) {
+    transform: translateY(200%);
+ 
+  }
+  .faqItem:nth-child(4) {
+    transform: translateY(300%);
+  
+  }
+  .faqItem:nth-child(5) {
+    transform: translateY(375%);
+ 
+  }
+
+  .faqItem:last-child {
+    border-bottom: 0px solid #fff;
+  }
+  
+  .question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-family: var(--secondaryfont);
+    font-size: clamp(1.2rem, 0.7987rem + 1.8344vw, 3rem);
+    line-height: 1;
+  }
+  
+  .questionPreanswer {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .preanswer {
+    font-family: var(--thirdfont);
+    font-size: clamp(0.7rem, 0.5662rem + 0.6115vw, 1.3rem);    display: flex;
+    font-weight: 100;
+    flex-direction: column;
+    text-align: end;
+    padding-right: 5%;
+  }
+  .toggle {
+    font-size: clamp(1.2rem, 0.5758rem + 2.8535vw, 4rem);
+    color: var(--colororange);
+    padding: 0 5%;
+    border-left: 1px solid white;
+  }
+  
+  .answer {
+    font-family: 'Beiruti';
+    font-size: clamp(1rem, 0.9108rem + 0.4076vw, 1.4rem);
+    font-weight: 400;
+    
+    height: 10%;
+    line-height: 1;
+  }
+  
+  @media screen and (max-width: 480px ) {
+    .faqContainer {
+      padding: 0 3%;
+    }
+  }

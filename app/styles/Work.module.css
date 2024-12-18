@@ -1,0 +1,87 @@
+.worktitlecontainer {
+    margin-top: 10%;
+    position: relative;
+    height: 100%;
+}
+.workContainer {
+    height: 200vh;
+    width: 80vw;
+    margin-top: 5%;
+    
+
+
+}
+
+.worktitlecontainer section:first-child{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: end;
+    
+}
+
+.boxWork{
+    width: 15vw;
+}
+
+
+.worktitle h1 {
+    font-family: var(--thirdfont);
+    font-size: clamp(6rem, 3.3248rem + 12.2293vw, 18rem);    line-height: 1;
+    font-weight: 100;
+
+
+}
+.worktitle {
+    position: relative;
+}
+
+.worktitles{
+    
+    position: absolute;
+    top: 15px;
+    left: -15px;
+    z-index: -1;
+
+}
+
+.worktitles h1 {
+    font-family: var(--thirdfont);
+    font-size: clamp(6rem, 3.3248rem + 12.2293vw, 18rem);    font-weight: 100;
+    line-height: 1;
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .worktitlecontainer section:first-child {
+        position: initial;
+    }
+    .worktitles{
+        top: 7px;
+        left: 7px;
+    
+    }
+    .boxWork{
+        width: 20vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .worktitlecontainer section:first-child {
+        position: initial;
+    }
+    .worktitles{
+        top: 7px;
+        left: 7px;
+    
+    }
+    .boxWork{
+        width: 25vw;
+    }
+}
+
+

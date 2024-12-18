@@ -1,0 +1,321 @@
+.aboutContainer {
+
+    margin-top: 10%;
+    padding: 2% 2%;
+    position: relative;
+    height: 200vh;
+
+}
+
+.aboutSticky {
+    position: sticky;
+    top: 0;
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.aboutContent {
+
+    display: flex;
+    justify-content: space-between;
+    height: 80vh;
+}
+
+.aboutPaint {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.aboutPaint canvas {
+    height: 225px;
+}
+
+.aboutfirst {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+
+}
+.boxtitle{
+    position: relative;
+    /* overflow: clip; */
+    
+}
+
+.boxtitle h1 {
+    animation: textreveal forwards;
+    opacity: 0;
+    transform: translateY(100%);
+    animation-timeline: view();
+    animation-range-end: 800px;
+    line-height: 1;
+    font-weight: 100;
+
+}
+
+@keyframes textreveal {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.boxtitles{
+    position: absolute;
+    top: 15px;
+    left: -15px;
+    z-index: -1;
+
+}
+
+.boxtitles h1 {
+    font-weight: 100;
+    line-height: 1;
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+
+}
+
+.titleCity {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.titleCity h1 {
+    padding-top: 5%;
+    font-size: clamp(6rem, 3.3248rem + 12.2293vw, 18rem);
+    font-family: var(--thirdfont);
+}
+
+.titleCity p {
+    font-family: "Beiruti";
+    font-size: clamp(0.8rem, 0.6385rem + 0.7179vw, 1.5rem);
+}
+
+.paragraphAbout {
+    padding-top: 5%;
+    font-family: "Beiruti";
+    font-weight: 500;
+    width: 22vw;
+    font-size: clamp(0.8rem, 0.6662rem + 0.6115vw, 1.4rem);
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3.5rem;
+}
+
+.paragraphAbout p:first-child {
+    animation: textreveal 2s forwards;
+    opacity: 0;
+    transform: translateY(100%);
+    animation-timeline: view();
+    animation-range-end: 600px;
+}
+.paragraphAbout p:nth-child(2) {
+    animation: textreveal 2s forwards;
+    opacity: 0;
+    transform: translateY(100%);
+    animation-timeline: view();
+    animation-range-start: 200px;
+    animation-range-end: 700px;
+}
+.paragraphAbout p:last-child{
+    animation: textreveal 2s forwards;
+    opacity: 0;
+    transform: translateY(100%);
+    animation-timeline: view();
+    animation-range-start: 200px;
+    animation-range-end: 500px;
+}
+
+@keyframes textreveal {
+    from {
+        scale: 0.4;
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.imgAfouAbout {
+    object-fit: cover;
+}
+.birthday {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.birthday p {
+    font-family: var(--secondaryfont);
+    color: var(--colororange);
+    font-size: clamp(1.2rem, 1.0154rem + 0.8205vw, 2rem);
+
+}
+
+.birthday span {
+    display: flex;
+    flex-direction: column;
+}
+.footerAbout {
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.footerAbout a {
+    font-family: "Beiruti";
+    font-weight: 500;
+    font-size: clamp(0.9rem, 0.8308rem + 0.3077vw, 1.2rem);
+    cursor: pointer;
+}
+
+.aboutTextReveal {
+    text-align: center;
+    overflow: hidden; /* Cache le contenu défilant */
+    height: clamp(3rem, 1.1538rem + 8.2051vw, 11rem);
+}
+
+.aboutTextReveal h1 {
+    font-family: var(--secondaryfont);
+    color: var(--colororange);
+    font-size: clamp(3rem, 1.1538rem + 8.2051vw, 11rem);
+    font-weight: 100;
+    line-height: 1;
+    margin: 0;
+    transform: translateY(0);
+
+}
+
+.aboutTextReveal h1 span {
+    display: block;
+    height: 12rem;
+    animation: translateadjectif 18s steps(6) infinite;
+}
+
+@keyframes translateadjectif {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-600%);
+    }
+}
+
+.splinedesign {
+    opacity: 0;
+    animation: textreveal forwards;
+    transform: translateY(100%);
+    animation-timeline: view();
+    animation-range-start: 200px;
+    animation-range-end: 500px;
+    height: 200px;
+    width: 50vw;
+}
+/* .splinedesign canvas {
+    height: 200px;
+    width:100%;
+} */
+
+@media screen and (max-width: 1600px ) {
+
+    .paragraphAbout {
+        width: 25vw;
+        padding-top: 5%;
+        gap: 2.2rem;
+        font-weight: 400;
+    }
+
+    .aboutfirst {
+        width: 50vw;
+    }
+    .splinedesign canvas {
+        margin-top: 1%;
+        height: 100px;
+    }
+    .aboutTextReveal {
+        text-align: end;
+    }
+
+}
+@media screen and (max-width: 1180px ) {
+    .splinedesign canvas {
+        height: 150px;
+        width: 80%;
+    }
+    .aboutContainer {
+
+        position: relative;
+        height: 100vh;
+    }
+
+    .paragraphAbout {
+        width: 35vw;
+    }
+    .footerAbout {
+    
+        margin-top: 2%;
+    }
+
+    .aboutTextReveal {
+        text-align: end;
+    }
+}
+@media screen and (max-width: 480px ) {
+
+    .aboutContent{
+        margin-top: 5%;
+        height: 92vh;
+        width: 100vw;
+
+    }
+.aboutfirst {
+    display: flex;
+    flex-direction: column;
+}
+.paragraphAbout {
+    width: 90vw;
+    flex-direction: column;
+    justify-content: center;
+}
+.paragraphAbout p {
+    padding: 0 5%;
+}
+
+.splinedesign {
+
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    height: 10vh;
+    overflow: hidden;
+    padding: 0 5%;
+}
+
+.splinedesign canvas {
+    height: 50px;
+
+}
+
+.aboutContainer {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 100vw;
+}
+
+.footerAbout {
+    margin-top: 0;
+}
+}

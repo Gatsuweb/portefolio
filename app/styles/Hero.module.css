@@ -1,0 +1,236 @@
+.herocontainer {
+    /* background-image: url("/imghero.svg");
+    background-repeat: no-repeat;
+    background-position: center; */
+    /* color: white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.headerHero {
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerHero li {
+    font-family: var(--thirdfont);
+    font-size: clamp(1rem, 0.8846rem + 0.5128vw, 1.5rem);
+    padding-top: 1%;
+}
+
+
+
+.navbarHero {
+    font-size: clamp(5rem, 4.5541rem + 2.0382vw, 7rem);
+    text-align: end;
+    list-style: none;
+    overflow: hidden;
+    font-family: var(--thirdfont);
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.box {
+    overflow: hidden;
+}
+
+.navbarHero li:first-child {
+    transform: translateY(100%);
+    animation: 1.5s translateTop 1s ease forwards;
+    overflow: hidden;
+}
+
+@keyframes translateTop {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.navbarHero li:hover {
+    list-style: disc;
+    color: var(--colororange);
+}
+
+.middleHero {
+    margin-top: 4%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+
+
+}
+
+
+.reso {
+    position: relative;
+    z-index: 20;
+    cursor: pointer;
+    height: 40%;
+    display: flex;
+    justify-content: space-around;
+    font-family: var(--thirdfont);
+    font-weight: 100;
+    writing-mode: vertical-rl;
+    font-size: clamp(0.8rem, 0.6439rem + 0.7134vw, 1.5rem);
+}
+
+.reso a:hover {
+    color: var(--colororange);
+}
+/* .footerHero {
+    animation: translateTop 2s ease forwards;
+} */
+.footerHero {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    position: relative;
+    z-index: 20;
+    margin-bottom: 1%;
+    animation: disparait;
+    animation-timeline: view();
+    animation-range-start: 200px;
+ 
+}
+
+
+@keyframes disparait {
+to{
+  opacity: 0;
+}
+} 
+.footerHero h1 {
+    font-family: var(--thirdfont);
+    font-weight: bolder;
+    text-transform: uppercase;
+    /* font-size: clamp(3rem, 2.3077rem + 3.0769vw, 6rem); */
+    font-size: clamp(1.6rem, 0.842rem + 3.465vw, 5rem);
+    line-height: 1;
+
+}
+
+.footerHero p {
+    font-family: var(--secondaryfont);
+    font-size: clamp(1rem, 0.6879rem + 1.4268vw, 2.4rem);
+        font-weight: 100;
+    line-height: 1;
+}
+
+.footerHero span {
+    color: var(--colororange);
+}
+
+
+.titlesHero {
+    display: flex;
+    height: clamp(1.6rem, 0.842rem + 3.465vw, 5rem);
+    gap: 2%;
+    width: 50vw;
+    overflow: hidden;
+}
+.titlesHero h1:first-child {
+    display: flex;
+    flex-direction: column;
+}
+
+.titlesHero span {
+text-align: center;
+    animation: translateadjectif 6s steps(3) infinite;
+}
+
+@keyframes translateadjectif {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-300%);
+    }
+}
+
+.btnLightcontainer {
+    width: 4rem;
+    display: flex;
+    justify-content: space-between;
+
+    /* gap: 1rem; */
+}
+.circleLight, .circleDark {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+.spanTextContainer {
+    padding-top: 1%;
+    display: flex;
+justify-content: space-between; 
+overflow: hidden;
+gap: 8px;
+}
+.spanTextEffect {
+    height: clamp(1rem, 0.7231rem + 1.2308vw, 2.2rem);
+    overflow: hidden;
+}
+.spanTextEffect span{
+    padding-right: 2%;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--secondaryfont);
+    color: var( --colororange);
+    font-size: clamp(1rem, 0.7231rem + 1.2308vw, 2.2rem);
+    line-height: 1;
+    animation: animate 0.8s forwards;
+    animation-delay: 3s;
+
+}
+@keyframes animate {
+    from {
+        transform: translateY(0%);
+    }
+    to{
+        transform: translateY(-100%);
+    }
+}
+
+
+@media screen and (max-width: 480px ) {
+    .footerHero {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .navbarHero li:hover {
+        list-style: none;
+    }
+    .headerHero {
+        height: 5vh;
+    }
+
+    .reso {
+        display: none;
+    }
+
+    .middleHero {
+        justify-content: center;
+    }
+
+    .navbarHero {
+        text-align: center;
+    }
+
+    .herocontainer {
+        height: 100dvh;
+    }
+    .footerHero {
+        gap: 15px;
+    }
+
+}

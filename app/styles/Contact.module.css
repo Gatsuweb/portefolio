@@ -1,0 +1,133 @@
+.contactContainer {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 10%;
+    padding-top: 2%;
+
+}
+
+.titleContact h1{
+    padding-top: 1%;
+    font-size: clamp(5.8rem, 3.749rem + 9.3758vw, 15rem);
+        font-family: var(--thirdfont);
+    line-height: 0.8;
+    color: transparent;
+    font-weight: 100;
+    -webkit-text-stroke: 2px var(--colororange);
+}
+
+.titleContact h1:nth-child(3) {
+    color: var(--colororange);
+    -webkit-text-stroke: 0px var(--colororange);
+}
+
+
+.contactHero {
+    display: flex;
+    height: 100%;
+}
+
+.contactContent {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.contactContent h2{
+    font-family: var(--secondaryfont);
+    font-size: clamp(4rem, 1.6923rem + 10.2564vw, 14rem);
+    font-weight: 100;
+    line-height: 1;
+}
+
+.boxContact {
+    position: relative;
+    z-index: 20;
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerContact {
+    display: flex;
+    justify-content: space-between;
+}
+
+.boxContact h4 {
+    font-size: clamp(2.5rem, 2.1656rem + 1.5287vw, 4rem);
+    font-weight: 100;
+    font-family: var(--thirdfont);
+}
+.boxContact h5 {
+    font-size: clamp(1.6rem, 1.2879rem + 1.4268vw, 3rem);
+    font-weight: 100;
+    font-family: var(--thirdfont);
+}
+.boxContact h6 {
+    font-size: clamp(1.1rem, 0.9217rem + 0.8153vw, 1.9rem);
+    font-weight: 100;
+    font-family: var(--thirdfont);
+}
+
+.boxContact a {
+    font-family: "Beiruti";
+}
+
+#adress {
+    font-size: clamp(1.5rem, 1.2994rem + 0.9172vw, 2.4rem);
+}
+
+#tel {
+    font-size: clamp(1.2rem, 1.0154rem + 0.8205vw, 2rem);
+    font-family: "Beiruti";
+}
+
+.contactReso {
+    font-size: clamp(0.9rem, 0.7846rem + 0.5128vw, 1.4rem);
+}
+
+#textcontact {
+    font-size: clamp(1.1rem, 1.0331rem + 0.3057vw, 1.4rem);     font-weight: 100;
+     width: 80%;
+     text-align: justify;
+     font-family: "Beiruti";
+}
+
+.footerContact {
+    font-family: "Beiruti";
+    font-size: clamp(0.8rem, 0.7077rem + 0.4103vw, 1.2rem);
+}
+
+.footerContact span {
+    font-family: var(--secondaryfont);
+    color: var(--colororange);
+    font-size: clamp(1rem, 0.8615rem + 0.6154vw, 1.6rem);
+
+}
+
+@media screen and (max-width: 1600px ) {
+    .boxContact {
+        width: 60%;
+    }
+    #textcontact {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px ) {
+    .titleContact {
+        display: none;
+    }
+    .contactContent{
+        align-items: center;
+    }
+    .boxContact {
+        width: 80%;
+    }
+    #textcontact {
+        width: 100%;
+    }
+}
