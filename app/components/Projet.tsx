@@ -29,7 +29,7 @@ export default function Projet() {
     {
       id: 1,
       title: "Valkyr Ink",
-      type: "Tattoo artist, site vitrine",
+      type: "Tattoo artist, site vitrine.",
       description: "Valkyr ink est une artiste tatoueuse. Ce site a été réalisé dans l'idée de créer une experience utilisateur immersive et innovante, reflétant son travail",
       stack: "React, spline, css, gsap",
       lien: "https://valkyrink-tattoo.com/",
@@ -44,7 +44,7 @@ export default function Projet() {
     {
       id: 2,
       title: "CyberVikingTattoo",
-      type: "Tattoo artist, site vitrine",
+      type: "Tattoo artist, site vitrine.",
       description: "CyberVikingTattoo est un artiste tatoueur. Son projet met en valeur les tatouages d'inspiration cyber et viking, correspondant à son style.",
       stack: "NextJS, spline, css",
       lien: "",
@@ -59,7 +59,7 @@ export default function Projet() {
     {
       id: 3,
       title: "Korando",
-      type: "Application web, réseau social",
+      type: "Application web, réseau social.",
       description: "Korando est une plateforme que j'ai créée pour permettre de découvrir les sentiers bretons, les événements outdoor, ainsi que de trouver des groupes de marche, de trail et d'autres activités de plein air.",
       stack: "ReactJS, CSS, PostgreSQL, Clerk ",
       lien: "En cours...",
@@ -74,7 +74,7 @@ export default function Projet() {
     {
       id: 4,
       title: "Guild",
-      type: "Application web, réseau social",
+      type: "Application web, réseau social.",
       description: "Guild est un réseau social qui met en relation les joueurs de RPG pour leur permettre de trouver chaussure à leur pied. Les utilisateurs peuvent créer et rejoindre des groupes en fonction de critères de recherche précis.",
       stack: "ReactJS, spline, CSS, Express, MySQL",
       lien: "Projet de formation",
